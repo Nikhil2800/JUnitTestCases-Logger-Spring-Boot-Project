@@ -33,7 +33,7 @@ public class MyController {
 		log.info("Fetching All Students");
 		List<Student> students = studentService.getAllStudent();
 		log.debug("Number is student fetched..{} "+students.size());
-		return this.studentService.getAllStudent();
+		return students;
 	}
 	
 	@GetMapping("/students/{studentid}")
